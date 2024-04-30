@@ -1,3 +1,4 @@
+import PlayerInfo from "./components/PlayerInfo"
 
 function App() {
   
@@ -6,20 +7,8 @@ function App() {
     <main>
         <div id='game-container'>
             <ol id='players'>
-                <li>
-                    <span className="player">
-                    <span className="player-name">Player 1</span>
-                    <span className="player-symbol">X</span>
-                    </span>
-                    <button>Edit</button>
-                </li>
-                <li>
-                <span className="player">
-                    <span className="player-name">Player 2</span>
-                    <span className="player-symbol">0</span>
-                    </span>
-                    <button>Edit</button>
-                </li>
+               <PlayerInfo player="Player 1" symbol="X"/>
+                <PlayerInfo player="Player 2" symbol="O"/>
 
             </ol>
         </div>
